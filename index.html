@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/style/custom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <header class="position-sticky top-0 z-index">
+      <nav>
+        <ul class="d-flex align-items-center list-unstyled py-2 m-0">
+          <li class="d-block d-lg-none mt-1 ms-2">
+            <button id="toggleMenu" onclick="showMenu()" class="border-0 bg-transparent transition"><i class="fas fa-bars"></i></button>
+          </li>
+          <li class="mx-3 me-auto fs-3">Navbar</li>
+          <li class="mx-3">contatti</li>
+          <li class="mx-3">carrello</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Overlay" onclick="showMenu()"></div>
+    <main>
+      <div class="d-flex">
+        <div id="menu" class="vh-100 w-75 w-lg-20 test z-indexMenu">
+          <div class="row mt-3 ms-2">
+            <div class="col-12 col-md-2 col-lg-3">
+              <img src="./ryuta-oyhw2keqRW0-unsplash.jpg" alt="" class="rounded-circle border border-2 border-info" style="width: 50px; height: 50px" />
+            </div>
+            <div class="col-12 col-md-10 col-lg-9">
+              <p class="fs-5 fw-semibold mb-0">Nome Cognome</p>
+              <p>Mentor</p>
+            </div>
+            <div class="row justify-content-center border-top border-bottom border-1 border-black">
+              <div class="col-12 col-sm-7 col-md-6 col-lg-12 py-3">
+                <input type="text" placeholder="Search Here" class="text-center rounded-4 w-100 py-1" />
+              </div>
+            </div>
+          </div>
+          <div class="row ms-2 g-5 mt-5">
+            <div class="col-12">
+              <a href="#">
+                <div class="row align-items-center">
+                  <i class="fas fa-home fs-3 fs-sm-1 fs-lg-3 col-2"></i>
+                  <p class="col-10 m-0 fs-4 fs-sm-1 fs-lg-3">Home</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12">
+              <a href="#">
+                <div class="row align-items-center">
+                  <i class="fas fa-user fs-3 fs-sm-1 col-2 fs-lg-3"></i>
+                  <p class="col-10 m-0 fs-4 fs-sm-1 fs-lg-3">Profile</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12">
+              <a href="#">
+                <div class="row align-items-center">
+                  <i class="fas fa-user-friends col-2 fs-3 fs-sm-1 fs-lg-3"></i>
+                  <p class="col-10 m-0 fs-4 fs-sm-1 fs-lg-3">Groups</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12">
+              <a href="#">
+                <div class="row align-items-center">
+                  <i class="fas fa-bell col-2 fs-3 fs-sm-1 fs-lg-3"></i>
+                  <p class="col-10 m-0 fs-4 fs-sm-1 fs-lg-3">Bell</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12">
+              <a href="#">
+                <div class="row align-items-center">
+                  <i class="fas fa-address-book fs-3 col-2 fs-sm-1 fs-lg-3"></i>
+                  <p class="col-10 m-0 fs-4 fs-sm-1 fs-lg-3">Dashboard</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mt-12">
+              <a href="#">
+                <div class="row align-items-center">
+                  <i class="fas fa-cog fs-3 col-2 fs-sm-1 fs-lg-3"></i>
+                  <p class="col-10 m-0 fs-4 fs-sm-1 fs-lg-3">Settings</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- fine row -->
+        </div>
+        <div class="bg-success vh-100 w-100 w-lg-80"></div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>

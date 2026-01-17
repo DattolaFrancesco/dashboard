@@ -1,0 +1,8 @@
+@import "../scss/variables";
+$blue-violet: rgb(76, 73, 241);
+
+$new-theme-colors: (
+  "blue-violet": $blue-violet,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
