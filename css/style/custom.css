@@ -7805,7 +7805,7 @@
   }
 }
 body {
-  background-color: rgb(255, 117, 38) !important;
+  background-color: rgb(241, 227, 209) !important;
 }
 
 header {
@@ -7852,6 +7852,10 @@ header {
   z-index: 2;
 }
 
+.bg-secondSection {
+  background-color: rgb(241, 227, 209);
+}
+
 #menu {
   background-color: rgb(248, 212, 168);
 }
@@ -7866,6 +7870,29 @@ header {
   font-weight: 900;
 }
 
+.customHeight {
+  height: 60px;
+}
+
+.menuCustomHeight {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.gap-custom {
+  gap: 2rem;
+}
+
+.w-custom {
+  width: 100px;
+}
+
+@media screen and (min-height: 800px) {
+  .gap-custom {
+    gap: 4rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .test {
     position: static;

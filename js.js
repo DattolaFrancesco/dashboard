@@ -1,6 +1,7 @@
 const toggleMenu = document.querySelector("#toggleMenu");
 const menu = document.querySelector("#menu");
 const overlay = document.querySelector(".Overlay");
+const sideBarSection = document.querySelector("#sideBarSection");
 
 const showMenu = () => {
   menu.classList.toggle("show");
@@ -14,4 +15,9 @@ window.addEventListener("resize", () => {
     toggleMenu.classList.remove("rotate");
     overlay.classList.remove("overlay");
   }
+});
+
+window.addEventListener("resize", () => {
+  let height = window.innerHeight;
+  sideBarSection.style = `height:${height}`;
 });
